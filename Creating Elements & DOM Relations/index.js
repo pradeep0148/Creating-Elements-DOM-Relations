@@ -1,0 +1,13 @@
+const firstDiv = document.querySelector("#header");
+const newSubHeading = document.createElement("h3");
+newSubHeading.textContent = "Buy high quality organic fruits online";
+newSubHeading.style.fontStyle = "italic";
+firstDiv.appendChild(newSubHeading);
+const secondDiv = document.querySelector("div:nth-of-type(2)");
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "Total fruits: 4";
+newParagraph.id = "fruits-total";
+secondDiv.insertBefore(newParagraph, secondDiv.firstChild);
+const newElement = document.createElement("em");
+newElement.textContent = "This is a new element!";
+secondDiv.appendChild(newElement);
